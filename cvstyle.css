@@ -1,19 +1,27 @@
 body{
-    background-color: rgb(12, 13, 14);
-
+    background-color: rgb(52, 52, 52);
+    /* background-color: rgb(91, 131, 131); */
+    /* background-color: white; */
+    /* background-image: linear-gradient(to right,rgb(93, 89, 89),rgb(221, 218, 218),rgb(139, 122, 122),rgb(247, 247, 247),rgb(113, 110, 110),rgb(246, 239, 239),rgb(160, 144, 144)); */
+   /* background-image: url(flat-lay-desk-concept-with-copy-space.jpg); */
+   background-image: linear-gradient(to right,rgb(27, 27, 27),rgb(94, 93, 93),rgb(50, 49, 49),rgb(76, 76, 76),rgb(52, 51, 51));
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
  .cv-container{
 width: 80%;
 height: 100%;
 display: flex;
 flex-direction: column;  
 align-items: center;
-background-color: rgb(89, 122, 122);
+background-color: rgb(89, 122, 122); 
+ background-image: linear-gradient(rgb(62, 80, 80),rgb(62, 83, 83), rgb(72, 95, 95),rgb(48, 48, 48)); 
+ /* background-image: url(bgimage.jpg); */
 padding: 10px;
-box-shadow: 0px 0px 20px 2px white;
+box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.659);
+/* box-shadow: 0px 0px 20px 2px white; */
 
 } 
 
@@ -31,8 +39,8 @@ box-shadow: 0px 0px 20px 2px white;
 
 }
 
-.box1:hover{
-    box-shadow: 0px 0px 20px 1px rgba(211, 178, 178, 0.514);
+.box1:hover ,.box2-color:hover , .box3-A:hover , .box3-B:hover {
+    box-shadow: 0px 0px 20px 1px rgba(173, 161, 161, 0.663);
 }
 
 .image-flex{
@@ -45,34 +53,28 @@ align-items: center;
 .box2-flex{
 display: flex;
 justify-content: space-between;
-background-color: rgb(89, 122, 122);
 width: 66%;
 
 }
 
-
+.font-give{
+    font-size: 13px;
+}
 
 .box2-color{
 background-color: rgb(228, 236, 243);
 border: 2px rgb(228, 236, 243);
 border-radius: 10px;
 padding: 3%;
-width: 46%;
+width: 48%;
 box-shadow: 0px 0px 20px 1px rgba(28, 28, 28, 0.514);
 
 
 }
 
-/* .box3-flex{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    background-color: rgb(89, 122, 122);
-    width: 48%;
- } */
 
 .box3-flex{
-    background-color: rgb(89, 122, 122);
+    /* background-color: rgb(89, 122, 122); */
     /* padding: 3%; */
     width: 42%;
     display: flex;
@@ -98,10 +100,5 @@ box-shadow: 0px 0px 20px 1px rgba(28, 28, 28, 0.514);
    border-radius: 50%;
    padding: 5px;
    float:left;
-   margin-right: 20px;
-
+   margin-right: 50px;
 }
-
-/*pinkish 255,228 ,225
-
- */
