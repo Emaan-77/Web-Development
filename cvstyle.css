@@ -1,82 +1,102 @@
 body{
-    background-color: rgb(11, 11, 11);
+    background-color: rgb(12, 13, 14);
 
-
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
  .cv-container{
 width: 80%;
-height: 100%;  
-margin: auto; background-color: rgb(89, 122, 122);
+height: 100%;
+display: flex;
+flex-direction: column;  
+align-items: center;
+background-color: rgb(89, 122, 122);
 padding: 10px;
+box-shadow: 0px 0px 20px 2px white;
 
 } 
 
-.box1 {
 
-    margin: auto;
+.box1 {
+    width:60%;
     margin-top: 50px;
     margin-bottom: 20px;
-    width: 60%;
-    /* height:200px; */
     background-color: rgb(228, 236, 243);
     border: 2px rgb(228, 236, 243);
     border-radius: 10px;
-    padding: 20px;
-   
-    /* padding-bottom: ; */
+    padding: 3%;
+    display:flex;
+    box-shadow: 0px 0px 20px 1px rgba(28, 28, 28, 0.514);
+
 }
 
 .box1:hover{
-    color: blueviolet;
+    box-shadow: 0px 0px 20px 1px rgba(211, 178, 178, 0.514);
 }
+
+.image-flex{
+display: flex;
+align-items: center;
+}
+
+
 
 .box2-flex{
 display: flex;
-margin: auto;
+justify-content: space-between;
 background-color: rgb(89, 122, 122);
 width: 66%;
 
 }
 
-.white{
-    background-color: rgb(228, 236, 243);
-}
 
-.box2-flex > div{
-    
-/* background-color: rgb(228, 236, 243); */
+
+.box2-color{
+background-color: rgb(228, 236, 243);
 border: 2px rgb(228, 236, 243);
 border-radius: 10px;
-padding: 20px;
-margin: 15px;
+padding: 3%;
+width: 46%;
+box-shadow: 0px 0px 20px 1px rgba(28, 28, 28, 0.514);
+
 
 }
 
-.box3-flex{
+/* .box3-flex{
     display: flex;
     flex-direction: column;
     margin: 10px;
     background-color: rgb(89, 122, 122);
-    width: 56%;
+    width: 48%;
+ } */
+
+.box3-flex{
+    background-color: rgb(89, 122, 122);
+    /* padding: 3%; */
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
  }
 
-.box3-flex > div{
+ .box3-A, .box3-B{
     background-color: rgb(228, 236, 243);
     border: 2px rgb(228, 236, 243);
     border-radius: 10px;
-    padding: 10px;
-    margin: 15px;
-    
-
+   padding: 2% 4%;
+   box-shadow: 0px 0px 20px 1px rgba(28, 28, 28, 0.514);
+  
  }
 
 
 
 .pfp{
-    border: 1px solid rgb(109, 109, 109);
-    border-radius: 50%;
-    padding: 5px;
+   border: 1px solid rgb(109, 109, 109);
+   border-radius: 50%;
+   padding: 5px;
    float:left;
    margin-right: 20px;
 
