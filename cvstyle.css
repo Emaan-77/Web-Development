@@ -11,12 +11,12 @@ body{
 }
 
  .cv-container{
-width: 80%;
+width: 70%;
 height: 100%;
 display: flex;
 flex-direction: column;  
 align-items: center;
-background-color: rgb(89, 122, 122); 
+background-color:rgb(89, 122, 122) ; 
  background-image: linear-gradient(rgb(62, 80, 80),rgb(62, 83, 83), rgb(72, 95, 95),rgb(48, 48, 48)); 
  /* background-image: url(bgimage.jpg); */
 padding: 10px;
@@ -85,10 +85,13 @@ box-shadow: 0px 0px 20px 1px rgba(28, 28, 28, 0.514);
  }
 
  .box3-A, .box3-B{
+    width:100%;
     background-color: rgb(228, 236, 243);
     border: 2px rgb(228, 236, 243);
     border-radius: 10px;
-   padding: 2% 4%;
+   padding-left: 5%;
+   padding-right: 5%;
+   padding-bottom: 5%;
    box-shadow: 0px 0px 20px 1px rgba(28, 28, 28, 0.514);
   
  }
@@ -101,4 +104,41 @@ box-shadow: 0px 0px 20px 1px rgba(28, 28, 28, 0.514);
    padding: 5px;
    float:left;
    margin-right: 50px;
+}
+
+
+.container{
+ width:100%;
+    background-color: rgba(28, 28, 28, 0.514) ;
+    border: rgba(28, 28, 28, 0.514);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px rgba(28, 28, 28, 0.514);
+}
+
+.skills-project, .skills-team, .skills-program, .skills-creative{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: rgb(89, 122, 122);
+    border: 1px rgb(89, 122, 122);
+    border-radius: 20px;
+}
+
+.skills-project{
+    width: 75%;
+    background-color:rgb(89, 122, 122);
+}
+.skills-program{
+    width:80%;
+    background-color: rgb(89, 122, 122);
+}
+.skills-creative{
+    width:70%;
+    background-color:rgb(89, 122, 122);
+}
+.skills-team{
+    width: 85%;
+    background-color: rgb(89, 122, 122);
+}
+.text-pic{
+   align-items: center;
 }
