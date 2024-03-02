@@ -1,0 +1,35 @@
+
+.nav-link{
+    color: black;
+}
+
+.nav-link:hover{
+    color: grey;
+}
+
+.nav .nav-item1{
+    color: black;
+ margin-right: 50px;
+ padding-top: 10px;
+
+}
+
+.carousel{
+  width: 60%;
+
+}
+
+.carousel-item{
+    height: 500px;
+}
+
+.carousel-containerflex{
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.carousel-sideimage{
+width: 20%;
+}
