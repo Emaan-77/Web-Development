@@ -1,0 +1,159 @@
+.all{
+    background-color: #a9b9c1;
+}
+.nav-link{
+    color: white;
+  }
+  .name-change:hover{
+    color: black !important;
+  }
+  
+  .nav-link:hover{
+    color: black !important;
+  }
+  .namelogo1{
+    color: white !important;
+  }
+  
+  .nav .nav-item1{
+    color: white;
+  margin-right: 50px;
+  padding-top: 10px;
+  
+  }
+  .flex-nav{
+    display: flex !important;
+    flex-wrap: nowrap !important;
+  }
+  
+  .firstbar{
+    background-color:  #0d1e2e;
+  }
+  
+  .navbar input[type="search"] {
+    background-color:white !important; 
+    color:black !important; 
+  }
+  .navbar input[type="search"] :hover{
+    color: blueviolet !important;
+  }
+  
+  .textnav{
+    color: rgb(14,52,90) !important;
+  }
+  .secondbar{
+    color: rgb(14,52,90) !important;
+  }
+  .padding-top{
+    padding-top: 1%;
+  }
+  
+  .navbar button[type="submit"] {
+    background-color: white !important;
+    color: black !important; 
+    border-color: grey !important; 
+  } 
+  .navbar-nav{
+    justify-content: flex-end !important;
+  }
+  
+  .margin-0{
+    margin: 0 !important;
+  }
+
+  .padding-0{
+    padding: 0 !important;
+  }
+
+  .padding-inline-10{
+    padding-inline: 10px;
+  }
+  @media screen and (max-width: 700px){
+  .nav-item1 {
+      margin: 0 auto !important;
+  }}
+
+  .flex-area{
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+  }
+
+  .left-side{
+    width: 37%;
+    height: 400px;
+  }
+
+  .right-side{
+    width: 59%;
+    height: 400px;
+    overflow-y: scroll;
+
+  }
+
+  .Font-style{
+    font-family: "Bellefair", serif;
+}
+.design-label{
+    box-shadow: 0 0 4px 1px rgb(93, 121, 152);
+    border: 1px solid rgb(33, 72, 120);
+}
+
+.font{
+    font-family:  "Noto Serif Telugu", serif;
+}
+
+.button-style{
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+}
+.button-style:hover{
+    background-color: grey;
+    border: 2px solid black;
+}
+.btn-edit{
+    background-color: rgb(55, 101, 156);
+    border: 1px solid black;
+    color: white;
+}
+
+.btn-del{
+    background-color: rgb(177, 64, 64);
+    border: 1px solid black;
+
+}
+.btn-del:hover{
+    background-color: rgb(254, 104, 104);
+}
+
+.review-container .name-style{
+font-family: 'Notu Serif Telugu', Times, serif;
+font-size: 21px;
+font-weight: 550;
+}
+
+.review-container .bold-style{
+    font-family: 'Notu Serif Telugu', Times, serif;
+}
+
+.review-container .review-style{
+    padding-bottom: 2%;
+}
+
+.review-container .mb-3 {
+
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px 1px rgb(140, 162, 188);
+    background-color:  #214667;
+    color: white;
+}
+
+.review-container .mb-3:hover{
+
+    box-shadow: 0 0 8px 2px rgb(60, 91, 155);
+
+}
