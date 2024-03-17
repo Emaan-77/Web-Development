@@ -1,13 +1,15 @@
-
+.all-color{
+    background-color: rgb(244, 244, 244);
+}
 .nav-link{
     color: white;
 }
 .name-change:hover{
-    color: grey !important;
+    color: black !important;
 }
 
 .nav-link:hover{
-    color: grey;
+    color: black;
 }
 
 .nav .nav-item1{
@@ -18,7 +20,7 @@
 }
 
 .carousel{
-  width: 60%;
+  width: 75%;
 
 }
 
@@ -35,22 +37,26 @@
 }
 
 .firstbar{
-    background-color:  rgb(27, 32, 38);
+    background-color:   rgb(114, 126, 139);
+}
+.navbar-toggler .navbar-toggler-icon {
+    /* background-color: rgb(209, 211, 215); */
+   border-radius: 4px;
 }
 
 .carousel-sideimage1{
-width: 20%;
+width: 17%;
 padding-right:2%;
 }
 
 .carousel-sideimage2{
-    width: 20%;
+    width: 17%;
     padding-left: 2%;
 }
 
 .carousel-inner{
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 1%;
+    padding-right: 1%;
     box-shadow:inset;
 }
 
@@ -82,7 +88,7 @@ padding-right:2%;
 }
 
  .containerbooks{
-    background-color:  rgb(14,52,90);
+    background-color:  rgb(23, 32, 52);
     width: 96%;   
     margin: auto;
     position: relative;
@@ -108,7 +114,7 @@ padding-right:2%;
 }
 
 .fontcheck{
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Jost',"Times New Roman", Times, serif;
   
 
 }
@@ -204,7 +210,7 @@ padding-right:2%;
   }
 
   .footer-container{
-    background-color: rgb(14,52,90);
+    background-color: rgb(23, 32, 52);
   }
 
 
@@ -231,12 +237,46 @@ padding-right:2%;
 
  .stylecard{
     width: 67%;
+    box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.1); 
   
- }
- .stylec{
-    width: 30%;
+    
  }
 
+ .image-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 243, 245);
+}
+
+.image-wrapper {
+    align-self: center;
+}
+
+
+ @media  screen and (max-width:600px) {
+    .stylecard{
+        width: 100% !important;
+        height: auto !important;
+    } 
+    .midarea{
+        flex-direction: column !important;
+
+    }
+    .stylec{
+        width: 100% !important;
+    }
+}
+
+.stylec{
+    width: 30%;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.card-group>.card{
+    margin-bottom: 0 !important;
+    border: none !important;
+}
  .stylepara{
     padding: 16px;
     text-align: justify;
