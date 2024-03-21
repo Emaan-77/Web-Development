@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="all-color">
+    
+ <a href="/contact">click here</a>
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiar firstbar">
+    <div class="container-fluid">
+      <a class="navbar-brand namelogo name-change" href="#">
+        <img src="images/logo.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+        Bookworms
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex mx-auto my-2 my-lg-0" role="search"> 
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+  
+
+        <div class="navbar-nav flex-row justify-content-lg-end">
+          <a class="nav-link" href="#">Login</a>
+        </div>
+        <div class="navbar-nav flex-row justify-content-lg-end">
+          <a class="nav-link" href="#">Signin</a> 
+        </div>
+        <div class="navbar-nav flex-row justify-content-lg-end n">
+          <a class="nav-link" href="#">
+            <img src="images/shopping-cart.png" alt="Cart" width="25" height="25">
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+
+
+
+
+  <ul class="nav justify-content-center nav-underline ">
+    <li class="nav-item1">
+      <a class="nav-link textnav" aria-current="page" href="#">Home</a>
+    </li>
+
+    
+    <li class="nav-item1 dropdown">
+        <a class="nav-link dropdown-toggle textnav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Books
+        </a>
+        <ul class="dropdown-menu">
+          
+          
+          <li><a class="dropdown-item textnav" href="#">Categories</a></li>
+
+          <li><a class="dropdown-item" href="#">Best Seller</a></li>
+          
+          
+          
+          <li><a class="dropdown-item" href="#">New Releases</a></li>
+          <li><a class="dropdown-item" href="#">Coming Soon (Pre-Order)</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Thrifted Books</a></li>
+        </ul>
+      </li>
+
+    <li class="nav-item1">
+      <a class="nav-link textnav" href="#">Events</a>
+    </li>
+    <li class="nav-item1">
+      <a class="nav-link textnav" href="/contact" >Contact</a>
+    </li>
+    <li class="nav-item1">
+      <a class="nav-link textnav" href="#">About Us</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+  
+
+
+
+<div class="carousel-containerflex">
+  <img class="carousel-sideimage2" src="images/leftdark.jpg">
+
+  <div id="carouselExampleInterval" class="carousel slide sizecarous" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="images/stackedshelf.jpg" class="d-block w-100 " alt="pic here" height="495">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="images/books.jpg" class="d-block w-100 " alt="pic here" height="495">
+      </div>
+      <div class="carousel-item">
+        <img src="images/bookstack.jpg" class="d-block w-100" alt="pic here" height="495">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <img class="carousel-sideimage1" src="images/rightdark.jpg">
+
+
+</div>
+
+<div class="containerbooks">
+  <h1 class="headingdes"><b>BESTSELLERS</b></h1>
+<div class="flexbestseller">
+  <div><img class="imgbest" src="images/alchemist.jpg" alt="The alchemist" width="150" height="180">
+    <div class="imgtext">
+      <div>The Alchemist</div>
+      <div>PKR 1500</div>
+    </div>
+  </div>
+  <div><img class="imgbest" src="images/faultinourstars.jpg" alt="The fault in our stars" width="150" height="180"> 
+    <div class="imgtext">
+      <div>The Fault in Our Stars</div>
+      <div>PKR 1800</div>
+    </div>
+  </div>
+  <div><img class="imgbest" src="images/it ends with us.jpg" alt="It ends with us" width="150" height="180">
+    <div class="imgtext">
+      <div>It Ends with Us</div>
+        <div>PKR 2000</div>
+    </div>
+  </div>
+  <div><img class="imgbest" src="images/40rulesoflove.jpg" alt="Forty rules of love" width="150" height="180">
+    <div class="imgtext">
+      <div>The Forty Rules of Love</div>
+      <div>PKR 1300</div>
+    </div>
+  </div>
+  <div><img class="imgbest" src="images/kiterunner.jpg" alt="Kite Runner" width="150" height="180">
+    <div class="imgtext">
+      <div>The Kite Runner</div>
+        <div>PKR 1600</div>
+    </div>
+  </div>
+  <div><img class="imgbest" src="images/100splendidsons.jpg" alt="Thousand splendid suns" width="150" height="180">
+    <div class="imgtext">
+      <div>A Thousand Splendid Suns</div>
+        <div>PKR 1750</div>
+    </div>
+  </div>
+
+</div>
+
+<div>
+  <h1 class="heading2"><b>RECOMMENDED BOOKS</b></h1>
+
+
+  <div class="flexrecommended">
+    <div><img class="imgbest" src="images/alchemist.jpg" alt="The alchemist" width="150" height="180">
+      <div class="imgtext">
+        <div>The Alchemist</div>
+        <div>PKR 1500</div>
+      </div>
+    </div>
+    <div><img class="imgbest" src="images/faultinourstars.jpg" alt="The fault in our stars" width="150" height="180"> 
+      <div class="imgtext">
+        <div>The Fault in Our Stars</div>
+        <div>PKR 1800</div>
+      </div>
+    </div>
+    <div><img class="imgbest" src="images/it ends with us.jpg" alt="It ends with us" width="150" height="180">
+      <div class="imgtext">
+        <div>It Ends with Us</div>
+          <div>PKR 2000</div>
+      </div>
+    </div>
+    <div><img class="imgbest" src="images/40rulesoflove.jpg" alt="Forty rules of love" width="150" height="180">
+      <div class="imgtext">
+        <div>The Forty Rules of Love</div>
+        <div>PKR 1300</div>
+      </div>
+    </div>
+    <div><img class="imgbest" src="images/kiterunner.jpg" alt="Kite Runner" width="150" height="180">
+      <div class="imgtext">
+        <div>The Kite Runner</div>
+          <div>PKR 1600</div>
+      </div>
+    </div>
+    <div><img class="imgbest" src="images/100splendidsons.jpg" alt="Thousand splendid suns" width="150" height="180">
+      <div class="imgtext">
+        <div>A Thousand Splendid Suns</div>
+          <div>PKR 1750</div>
+      </div>
+    </div>
+  
+  </div>
+
+
+</div>
+
+</div>
+
+<br>
+
+<div class="midarea">
+
+
+    <div class="card-group text-center stylecard">
+      <div class="card mb-3 image-container" >
+        <div class="row g-0 ">
+          <div class="col-md-4 image-wrapper">
+            <img src="images/FICTIOnitendswithus.png" class="img-fluid rounded-start" alt="SALE" >
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fontcheck"><b>"BESTSELLER OF THE MONTH"</b></h5>
+              <div class="stylepara">
+              <p class="card-text fontcheck ">Step into the captivating world of "It Ends With Us" by Colleen Hoover, a transcendent tale that 
+                 reigns as our bestseller of the month. Delve into the life of protagonist Lily Bloom as she embarks on a journey filled 
+                 with love, heartache, and ultimately, empowerment. Set against the backdrop of Boston, Hoover intricately weaves a narrative
+                 that explores the complexities of relationships, the weight of past traumas, and the profound impact of choices made in the 
+                 face of adversity. As Lily navigates the intricacies of her past and present, readers are drawn into a whirlwind of emotions,forgiveness, and the indomitable strength of the human spirit. As our featured bestseller of the month, 
+                 immerse yourself in this unforgettable story and discover why it has captured the hearts of readers worldwide. Click below 
+                 to secure your copy and embark on a transformative journey that will linger in your thoughts long after the final page is turned.</p>
+                </div>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+      
+      <div class="card stylec" >
+        <img src="images/booksale.jpeg" class="card-img-top" alt="it ends with us" width="200px" height="370px">
+        <div class="card-body ">
+          <h5 class="card-title fontcheck "><b>Upcoming Events</b></h5>
+          <p class="card-text fontcheck">Sale Upto 30% off. Grab your favourite book.</p>
+          <a href="#" class="btn btn-primary">Get to know more</a>
+        </div>
+      </div>
+
+
+</div>
+
+
+
+
+  <footer class="text-center text-lg-start mt-xl-5 pt-4 footer-container">
+
+  <div class="container p-4 ">
+
+    <div class="row">
+    
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="text-uppercase mb-4 ftr-heading">Bookworms.</h5>
+
+        <ul class="list-unstyled mb-4">
+          <li>
+            <div class="text-white">Street 208 Area 101 <br>Gulberg 3<br> Lahore, Pakistan. <br>0334-9783845 <br><a class="maillink" href=mailto:“emaanjawad21@gmail.com”>bookworms15@gmail.com</a></div>
+          </li>
+        </ul>
+      </div>
+     
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 ftr-heading">
+        <h5 class="text-uppercase mb-4">Shop</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-white">FAQ</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Shipping & Returns</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Store Policy</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Reviews</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Terms and Conditions</a>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 ">
+        <h5 class="text-uppercase mb-4 ftr-heading ">Socials</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-white">Facebook</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 ftr-heading">  
+        <h5 class="text-uppercase mb-4 ftr-heading">Sign up to our newsletter</h5>
+      
+        <div class="form-outline form-white mb-4">
+          <input type="email" id="emailinput" class="form-control" placeholder="Enter email address">
+        </div>
+      
+        <div class="form-outline form-white mb-4">
+          <select class="form-select" id="membershipOptions" >
+            <option value="" disabled selected>Choose one</option>
+            <option value="member">Member</option>
+            <option value="non-member">Non-member</option>
+          </select>
+        </div>
+      
+   
+          <button type="submit" class="btn btn-outline btn-block " id="subscribebtn" onclick="validateEmail()">Subscribe</button>
+     
+      </div>
+      
+  
+    </div>
+   
+  </div>
+
+
+  <div class="text-center p-3 ftr-heading">
+    © 2020 Copyright:
+    <a class="text-white" href="#">Bookworms</a>
+  </div>
+
+</footer>
+
+
+
+    </body>
+    </html>
