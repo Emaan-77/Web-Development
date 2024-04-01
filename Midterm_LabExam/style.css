@@ -1,0 +1,142 @@
+.page-header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.headerend-flex{
+    display: flex;
+    width: 33%;
+    justify-content: flex-end;
+   
+   }
+   .headerend-flex div {
+    margin-right: 10px; 
+  }
+.header-class{
+    background-color: white;
+    
+}
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 20px; 
+    background-color: white;
+    margin-bottom: 4px;
+}
+
+.newsletters, .alerts{
+    background-color: rgb(0, 78, 121);
+    border: none;
+    color: white;
+   gap: 2%;
+}
+.follow{
+    background-color: red;
+    border: none;
+    color: white;
+    gap: 2%;
+}
+.flex-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.color-blue{
+    background-color: rgb(0, 78, 121);
+    font-size: small;
+ background-color: white;
+ border: none ;
+}
+
+.color-red{
+   
+    color: red;
+    font-size: small;
+    background-color: white;
+    border: none;
+}
+
+.heading2{
+    background-color: rgb(0, 78, 121);
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side{
+    display: flex;
+    color: white;
+}
+.right-side{
+    display: flex;
+    width: 33%;
+   align-items: flex-end;
+    flex-direction: column;
+    color: white;
+}
+.national{
+    font-size:x-large;
+}
+.logo
+{
+    background-color: white;
+    margin: 8%;
+}
+
+.margin-style{
+    margin-bottom: 2% !important;
+    background-color: grey;
+  }
+
+  .nav-style{
+    color: black !important;
+    border-left: 2px solid white !important;
+    padding-left: 8px !important;
+     
+  }
+
+  img{
+    width: 100%;
+}
+.custom-row0{
+    height: 8px !important;
+    margin-bottom: 2px !important;
+    background-color: rgb(0, 78, 121) !important;
+
+}
+
+.flex-nowrap{
+    flex-wrap: nowrap !important; 
+    border-bottom: rgb(211, 209, 209) solid 1px;
+    padding-bottom: 10px;
+
+}
+.btn-none{
+    background-color: white !important;
+    border: none !important;
+}
+.custom-row2{
+    font-family: "Acumin Pro ExtraCondensed";
+    line-height: 1.1em;
+}
+.custom-rowlive{
+    background-color: red !important;
+    height: 20px !important;
+    margin-bottom: 2px !important;
+    color: white !important;
+}
+
+.logo img {
+    width: 50px; 
+    height: auto; 
+}
+
+#altTextSpan {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid black;
+}
