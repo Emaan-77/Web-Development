@@ -1,8 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const Mobile = require("./models/Mobile");
+// const Mobile = require("./models/Mobile");
 let server = express();
 server.use(express.json());
+server.use(express.urlencoded());
+
 server.set("view engine", "ejs");
 server.use(express.static("public"));
 var expressLayouts = require("express-ejs-layouts");
@@ -11,7 +13,9 @@ server.use(expressLayouts);
 let mobileApiRouter = require("./routes/api/mobiles");
 server.use("/", mobileApiRouter);
 server.use("/", require("./routes/api/games"));
-server.use("/", require("./routes/site/games"));
+// server.use("/", require("./routes/site/games"));
+server.use("/", require("./routes/site/books"));
+
 
 server.get("/contact-us.html", (req, res) => {
   res.render("contact-us");

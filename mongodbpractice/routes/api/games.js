@@ -25,6 +25,7 @@ router.post("/api/games", async (req, res) => {
   return res.send(record);
 });
 router.get("/api/games", async function (req, res) {
+  
   let games = await Game.find();
   return res.send(games);
 });
