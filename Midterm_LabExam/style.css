@@ -132,9 +132,16 @@
     width: 50px; 
     height: auto; 
 }
+.custom-row:hover #altTextSpan {
+    display: inline-block;
+}
+#altTextSpan{
+    background-color: black;
+    color: white;
+}
 
 #altTextSpan {
-    display: none;
+    /* display: none; */
     position: absolute;
     background-color: white;
     padding: 5px;
