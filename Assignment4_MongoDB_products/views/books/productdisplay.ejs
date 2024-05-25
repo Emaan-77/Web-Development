@@ -1,0 +1,78 @@
+
+<link rel="stylesheet" href="/productdistyles.css">
+<!-- <script src="/addnew.js"></script> -->
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
+
+
+<div class="heading_align">
+<div class="list_style"> 
+<h2>
+    <%= pageTitle %>
+</h2>
+</div>
+<div class="list_Style2">
+    <h5>
+        Page <%= page %> of <%=totalPages %>
+    
+    </h5>
+    </div>
+
+</div>
+
+<div class="book-container">
+    <% for (let index = 0; index < books.length; index++) { %>
+        <div class="book-card">
+            <div class="book-info">
+                <h6 class="books-title top-title"><%= books[index].title %></h6>
+                <img src="/images/<%=books[index].image %>" class="card-img-top" alt="<%= books[index].title %>">
+                <h6 class="books-title">Genre: <%= books[index].genre %></h6>
+                <h6 class="books-title">Author: <%= books[index].author %></h6>
+                <h6 class="books-title">Price: <%= books[index].price %></h6>
+            </div>
+            
+            <div class="book-actions">
+                <div>
+                    <form action="" method="get">
+                        <button type="submit">Add to Cart</button>
+                    </form>
+                </div>
+                <div>
+                    <form action="" method="post">
+                        <button type="submit">Read More</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <% } %>
+</div>
+
+
+
+<div class="footer_align">
+    <h5 class="list_style"> 
+<ul>
+    <% if (page > 1) { %>
+        <li style="display: inline;">
+            <a href="/books/products/<%= page - 1 %>" class="style_index"> &lt; </a>
+        </li>
+    <% } %>
+    <% for (let index = 1; index <= totalPages; index++) { %>
+        <li style="display: inline;">
+            <a href="/books/products/<%= index %>" class="style_index"><%= index %></a>
+        </li>
+    <% } %>
+    <% if (page < totalPages) { %>
+        <li style="display: inline;">
+            <a href="/books/products/<%= page + 1 %>" class="style_index"> &gt; </a>
+        </li>
+    <% } %>
+</ul>
+
+    </h5>
+    
+    </div>
+    
+   
