@@ -1,0 +1,44 @@
+
+    <link rel="stylesheet" href="contactusccs.css">
+    <script src="contactusjq.js"></script>
+
+
+    <div class="container card-container card-font">
+        <div class="card-group text-center stylecard">
+            <div class="card mb-3 style-box">
+                <div class="row g-0 flex-contact">
+                    <div class="col-md-4">
+                        <img src="images/curvelib.jpg" class="img-fluid rounded-start" alt="SALE">
+                    </div>
+
+                    <div class="col-lg-6 mb-4 mb-lg-0 text-style">
+                        <h5 class="text-uppercase mb-4 contact-style">Contact Us</h5>
+                        <form id="contact-form" method="post" >
+                            <div class="form-outline mb-4">
+                                <label for="name" class="form-label text-style">FULL NAME</label>
+                                <input type="text" id="name" class="form-control box-underline" placeholder="Your Full Name" required>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <label for="email" class="form-label text-style">EMAIL ADDRESS</label>
+                                <input type="email" id="email" class="form-control box-underline" placeholder="Your Email Address" required>
+                            </div>
+                            <div class="form-outline mb-4 ">
+                                <label for="gender" class="form-label text-style">GENDER</label>
+                                <select class="form-select box-underline" id="gender" required>
+                                    <option value="" disabled selected>Choose Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <label for="message" class="form-label text-style">MESSAGE</label>
+                                <textarea class="form-control box-underline" id="message" rows="4" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button class="btn-outline btn-block btn-style2" id="btnclick">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
