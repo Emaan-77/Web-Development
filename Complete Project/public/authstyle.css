@@ -1,0 +1,57 @@
+#email_auth{
+    color: rgb(15, 14, 14);
+}
+
+
+  .box-underline{
+    border: none !important;
+    border-radius: 0% !important;
+    border-bottom: 1px solid black !important;
+    margin-bottom: 2px !important;
+    background-color: transparent !important;
+  }
+
+  .style_card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    width: 62%;
+    height: 80%;
+    margin: auto;
+    margin-top: 4%;
+    padding: 1%;
+   }
+             
+  #btnclick_auth{
+    font-weight: 300;
+    background: black ; 
+    color: white;
+    width: 10rem;
+    height: 2.25rem;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 4%;
+
+}
+
+.flex-auth{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly !important;
+    padding: 1%;
+}
+
+.font-fam{
+    font-family: 'Jost', sans-serif;
+
+}
+.center-text{
+    text-align: center;
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+.image-style{
+    margin-top: 4%;
+    height: 280px;
+    margin-bottom: 6%;
+}
