@@ -1,0 +1,103 @@
+
+<link rel="stylesheet" href="/productdistyles.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
+<div class="book-container">
+    <% for (let index = 0; index < books.length; index++) { %>
+        <div class="book-card">
+            <div class="book-info">
+                <h6 class="books-title top-title"><%= books[index].title %></h6>
+                <img src="/images/<%=books[index].image %>" class="card-img-top" alt="<%= books[index].title %>">
+                <h6 class="books-title">Genre: <%= books[index].genre %></h6>
+                <h6 class="books-title">Author: <%= books[index].author %></h6>
+                <h6 class="books-title">Price: <%= books[index].price %></h6>
+            </div>
+            
+            <div class="book-actions">
+                <button type="button" onclick="addToCart('<%= books[index].title %>', '<%= books[index].genre %>', '<%= books[index].author %>', '<%= books[index].price %>')">Add to Cart</button>
+            </div>
+        </div>
+    <% } %>
+</div>
+
+
+
+
+
+   
+    <script>
+        function addToCart(title, genre, author, price) {
+            fetch('/api/cart/addtocart', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ title, genre, author, price })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                updateCartDisplay();
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+
+        function removeFromCart(title) {
+            fetch('/api/cart/removecart', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ title })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                updateCartDisplay();
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+
+        function updateCartCounter(itemCount) {
+            const cartCounter = document.getElementById('cart-counter');
+            cartCounter.innerText = itemCount;
+        }
+
+        function updateCartDisplay() {
+            fetch('/api/cart/detailscart')
+            .then(response => response.json())
+            .then(cart => {
+                const cartElement = document.getElementById('cartItems');
+                cartElement.innerHTML = '';
+
+                let totalItems = 0;
+
+                cart.items.forEach(item => {
+                    totalItems += item.quantity;
+                    cartElement.innerHTML += `
+                        <div class="cart-item">
+                            <strong>${item.title}</strong><br>
+                            Author: ${item.author}<br>
+                            Price: Rs${item.price} x ${item.quantity}<br>
+                            <button onclick="removeFromCart('${item.title}')" class="btn btn-sm btn-danger">Remove</button>
+                        </div>
+                        <hr>
+                    `;
+                });
+
+                document.getElementById('cartTotal').innerText = `Total Price: Rs${cart.totalPrice.toFixed(2)}`;
+
+                updateCartCounter(totalItems);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartDisplay();
+        });
+    </script>
