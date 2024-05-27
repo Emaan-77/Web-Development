@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+.book-container {
+    background-color: #00274d;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search_disp{
+    background-color: #00274d;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+
+}
+.book-card {
+    background-color: #f3f5fb; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 18%; 
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+@media (max-width: 1250px) {
+    .book-card {
+        width: 28%;
+    }
+}
+@media (max-width: 900px) {
+    .book-card {
+        width: 40%;
+    }
+}
+@media (max-width: 630px) {
+    .book-card {
+        width: 70%;
+    }
+    
+}
+.book-info {
+    padding: 2px;
+    text-align: center;
+}
+.top-title{
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+
+    margin-top: 2%;
+}
+
+.card-img-top {
+    width: 110px;
+    height: 160px;
+    margin-top: 2%;
+
+}
+.info-search{
+    background-color: #00274d;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+}
+
+.book-actions form {
+    margin: 0;
+}
+
+.book-actions button {
+    background-color: #00274d;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.book-actions button:hover {
+    background-color: #004080;
+}
+.list_Style2{
+    text-align: right;
+    width: 98%;
+}
+.list_style{
+    margin-top: 2%;
+    text-align: center;
+}
+
+.pagination-container {
+    width: 98%;
+    text-align: right;
+    margin: 0 auto;
+  }
+  
+  .pagination-list {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .pagination-list li {
+    display: inline;
+    margin: 0 5px;
+  }
+  
+  .style_index {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .style_index:hover {
+    background-color: #f0f0f0;
+  }
+  

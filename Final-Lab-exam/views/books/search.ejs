@@ -1,0 +1,70 @@
+
+    <link rel="stylesheet" href="/productdistyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+
+  
+
+
+    <h1 class="top-title" style="text-align: center;"><%= pageTitle %></h1>
+
+    <h3 class="top-title">Search History</h3>
+    <ul>
+        <% searchHistory.forEach(term => { %>
+        <li><%= term %></li>
+        <% }) %>
+    </ul>
+
+   
+
+    <div class="search-results search_disp">
+        <% books.forEach(book => { %>
+        <div class="product">
+            <h2><%= book.title %></h2>
+            <p>Genre: <%= book.genre %></p>
+            <p>Author: <%= book.author %></p>
+            <p>Price: Rs<%= book.price %></p>
+        </div>
+        <% }) %>
+    </div>
+
+
+
+
+    <div class="book-container">
+        <% for (let index = 0; index < books.length; index++) { %>
+            <div class="book-card">
+                <div class="book-info">
+                    <h6 class="books-title top-title"><%= books[index].title %></h6>
+                    <img src="/images/<%=books[index].image %>" class="card-img-top" alt="<%= books[index].title %>">
+                    <h6 class="books-title">Genre: <%= books[index].genre %></h6>
+                    <h6 class="books-title">Author: <%= books[index].author %></h6>
+                    <h6 class="books-title">Price: <%= books[index].price %></h6>
+                </div>
+                
+                <div class="book-actions">
+                    <button type="button" onclick="addToCart('<%= books[index].title %>', '<%= books[index].genre %>', '<%= books[index].author %>', '<%= books[index].price %>')">Add to Cart</button>
+                </div>
+            </div>
+        <% } %>
+    </div>
+
+
+    <div class="pagination-container">
+        <% if (page > 1) { %>
+        <a href="/books/search?query=<%= query %>&page=<%= page - 1 %>" class="paginat_style">Previous</a>
+        <% } %>
+        <ul class="pagination-list">
+            <% for (let index = 1; index <= totalPages; index++) { %>
+            <li>
+                <a href="/books/search?query=<%= query %>&page=<%= index %>" class="style_index"><%= index %></a>
+            </li>
+            <% } %>
+        </ul>
+        <% if (page < totalPages) { %>
+        <a href="/books/search?query=<%= query %>&page=<%= page + 1 %>">Next</a>
+        <% } %>
+    </div>
+
+   
+
