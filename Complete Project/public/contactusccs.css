@@ -141,3 +141,10 @@
   .nav-item1 {
       margin: 0 auto !important;
   }}
+
+
+  @media (max-width: 900px) {
+    .card-group {
+        width: 40%;
+    }
+} 

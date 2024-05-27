@@ -91,11 +91,24 @@
     border-radius: 5px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
 }
-@media (max-width: 600px) {
+
+@media (max-width: 1250px) {
     .book-card {
-        width: 48% !important; 
+        width: 42%;
     }
 }
+@media (max-width: 900px) {
+    .book-card {
+        width: 40%;
+    }
+}
+@media (max-width: 630px) {
+    .book-card {
+        width: 94%;
+    }
+    
+}
+
 .book-info {
     margin-bottom: 10px;
 }

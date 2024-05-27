@@ -31,8 +31,6 @@ server.use("/auth", require("./routes/site/auth"));
 server.use("/api/cart",cartroute);
 
 
-server.use("/", require("./routes/api/games"));
-
 
 server.use("/", require("./routes/site/productshow")); 
 server.use("/", require("./routes/site/books"));
